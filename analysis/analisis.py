@@ -2,7 +2,7 @@
 """
 Created on Sun Oct  6 18:22:23 2024
 
-@author: Emiliano
+@author:
 """
 
 
@@ -10,7 +10,7 @@ from datetime import datetime
 import pandas as pd
 from inline_sql import sql, sql_val
 
-carpeta = "C:\\Users\\segov\\OneDrive\\Escritorio\\enunciado_tablas\\"
+carpeta = "\"
 
 # Correcting the file extension to .csv
 
@@ -1158,5 +1158,6 @@ ax.set_xticklabels(jugadores_atributos_goles_sorted['atributos_equipo'], rotatio
 
 plt.tight_layout()
 plt.show()
+
 
 
