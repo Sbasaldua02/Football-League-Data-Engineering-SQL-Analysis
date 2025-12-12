@@ -1,4 +1,5 @@
 # Diseño de Base de Datos y Análisis de Rendimiento en Ligas de Fútbol
+# Integrantes: Santos Basaldúa, Emiliano Segovia y Solana Sabor Schvartz
 
 > **Ingeniería de Datos y Análisis de Ligas de Fútbol: Realizamos un Proceso ETL completo desde datos crudos a Modelo Relacional (3FN),  hicimos un análisis de rendimiento usando Python, pandas y consultas SQL.  Utilizamos herramientas de Visualización de datos (Matplotlib) para insights deportivos.**
 
