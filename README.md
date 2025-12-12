@@ -1,6 +1,6 @@
 # Diseño de Base de Datos y Análisis de Rendimiento en Ligas de Fútbol
 
-> **Ingeniería de Datos y Análisis de Ligas de Fútbol: Realicé un Proceso ETL completo desde datos crudos a Modelo Relacional (3FN),  hice un análisis de rendimiento usando Python, pandas y consultas SQL.  Ulitizamos herramientas de Visualización de datos (Matplotlib) para insights deportivos.**
+> **Ingeniería de Datos y Análisis de Ligas de Fútbol: Realizamos un Proceso ETL completo desde datos crudos a Modelo Relacional (3FN),  hicimos un análisis de rendimiento usando Python, pandas y consultas SQL.  Ulitizamos herramientas de Visualización de datos (Matplotlib) para insights deportivos.**
 
 Este proyecto ejemplifica el ciclo completo del dato, desde la ingeniería y modelado de datos crudos hasta la obtención de informacion de rendimiento. El foco fue transformar datasets iniciales (con redundancia y problemas de estructura) en una base de datos relacional optimizada para análisis deportivo.
 
