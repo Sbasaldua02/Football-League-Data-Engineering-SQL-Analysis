@@ -13,7 +13,7 @@ El objetivo principal fue establecer una base de datos robusta para analizar el 
 ### Criterios Aplicados
 Para garantizar la fiabilidad del análisis longitudinal, establecimos un criterio de selección estricto:
 
-* **Ventana Temporal:** Seleccione **cuatro temporadas consecutivas** para evaluar la constancia en el rendimiento.
+* **Ventana Temporal:** Seleccionamos **cuatro temporadas consecutivas** para evaluar la constancia en el rendimiento.
 * **Estabilidad de Datos:** Solo se incluyeron **equipos que lograron mantener la categoría** (no descendieron) durante las temporadas analizadas. Esto minimiza la variación estadística ("ruido") introducida por equipos con ciclos de vida cortos en la liga.
 
 ---
