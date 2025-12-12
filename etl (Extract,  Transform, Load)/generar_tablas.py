@@ -2,13 +2,13 @@
 """
 Created on Wed Oct  9 22:40:00 2024
 
-@author: Emiliano
+@author:
 """
 
 import pandas as pd
 from inline_sql import sql, sql_val
 
-carpeta = "C:\\Users\\segov\\OneDrive\\Escritorio\\enunciado_tablas\\"
+carpeta = "/"
 
 # Correcting the file extension to .csv
 jugador = pd.read_csv(carpeta + "enunciado_jugadores.csv")
@@ -23,7 +23,7 @@ consultaSQL = """
               FROM liga;
               """
 liga_buena = sql^ consultaSQL 
-liga_buena.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\liga_buena.csv", index=False, encoding='utf-8')
+liga_buena.to_csv("\liga_buena.csv", index=False, encoding='utf-8')
 
 
 #hacemos nueva tabla que tenga nombre de liga y el id del pais.
@@ -56,7 +56,7 @@ consultaSQL = """
               """
 
 partidos_liga = sql^ consultaSQL
-partidos_liga.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\partidos_liga.csv", index=False, encoding='utf-8')
+partidos_liga.to_csv("partidos_liga.csv", index=False, encoding='utf-8')
 
 
 #tomamos todos los atributos de partidos buenos y cuando pais.id es igual a country_id,
@@ -67,7 +67,7 @@ SELECT  name AS nombre_pais,id AS id_pais
 FROM paises;
               """
 paises_buenos=sql^consultaSQL
-paises_buenos.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\paises_buenos.csv", index=False, encoding='utf-8')
+paises_buenos.to_csv("\paises_buenos.csv", index=False, encoding='utf-8')
 
 
 #tradujimos a español los atributos
@@ -78,7 +78,7 @@ from equipos;
 """
 
 equipos_buenos=sql^consultaSQL
-equipos_buenos.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\equipos_buenos.csv", index=False, encoding='utf-8')
+equipos_buenos.to_csv("\equipos_buenos.csv", index=False, encoding='utf-8')
 
 
 #dejamos lo que nos interesaba de equipos y lo tradujimos al español
@@ -91,7 +91,7 @@ FROM partidos_buenos;
 """
 
 juega= sql^consultaSQL
-juega.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\juega.csv", index=False, encoding='utf-8')
+juega.to_csv("\juega.csv", index=False, encoding='utf-8')
 #%%
 consultaSQL="""SELECT season,home_team_api_id AS team_api_id, home_player_1 AS player_id
 FROM partidos
@@ -166,12 +166,12 @@ consultaSQL="""SELECT DISTINCT *
 FROM JUEGO;
 """
 plantel =sql^consultaSQL
-plantel.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\plantel.csv", index=False, encoding='utf-8')
+plantel.to_csv("\plantel.csv", index=False, encoding='utf-8')
 #%%
 consultaSQL="""SELECT (*)
 FROM skills"""
 habilidades=sql^consultaSQL
-habilidades.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\habilidades.csv", index=False, encoding='utf-8')
+habilidades.to_csv("\habilidades.csv", index=False, encoding='utf-8')
 #%%
 consultaSQL="""SELECT 
 player_api_id AS id_jugador,
@@ -181,9 +181,10 @@ height AS altura,
 weight AS peso
 FROM jugador"""
 jugador_bueno=sql^consultaSQL
-jugador_bueno.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\jugador_bueno.csv", index=False, encoding='utf-8')
+jugador_bueno.to_csv("\jugador_bueno.csv", index=False, encoding='utf-8')
 #%%
 consultaSQL="""SELECT DISTINCT season AS fecha_temporada
 FROM partidos"""
 temporada=sql^consultaSQL
-temporada.to_csv("C:\\Users\\segov\\OneDrive\\Escritorio\\archivos_csv\\temporada.csv", index=False, encoding='utf-8')
+
+temporada.to_csv("\temporada.csv", index=False, encoding='utf-8')
