@@ -1,6 +1,6 @@
 # Diseño de Base de Datos y Análisis de Rendimiento en Ligas de Fútbol
 
-> **Ingeniería de Datos y Análisis de Ligas de Fútbol: Realizamos un Proceso ETL completo desde datos crudos a Modelo Relacional (3FN),  hicimos un análisis de rendimiento usando Python, pandas y consultas SQL.  Ulitizamos herramientas de Visualización de datos (Matplotlib) para insights deportivos.**
+> **Ingeniería de Datos y Análisis de Ligas de Fútbol: Realizamos un Proceso ETL completo desde datos crudos a Modelo Relacional (3FN),  hicimos un análisis de rendimiento usando Python, pandas y consultas SQL.  Utilizamos herramientas de Visualización de datos (Matplotlib) para insights deportivos.**
 
 Este proyecto ejemplifica el ciclo completo del dato, desde la ingeniería y modelado de datos crudos hasta la obtención de informacion de rendimiento. El foco fue transformar datasets iniciales (con redundancia y problemas de estructura) en una base de datos relacional optimizada para análisis deportivo.
 
@@ -8,19 +8,19 @@ Este proyecto ejemplifica el ciclo completo del dato, desde la ingeniería y mod
 
 ## 1. Desafío y Metodología (Criterio Analítico)
 
-El objetivo principal fue establecer una base de datos robusta para analizar el rendimiento de equipos y jugadores a lo largo de varias temporadas.
+Nuestro objetivo principal fue establecer una base de datos robusta para analizar el rendimiento de equipos y jugadores a lo largo de varias temporadas.
 
 ### Criterios Aplicados
 Para garantizar la fiabilidad del análisis longitudinal, establecimos un criterio de selección estricto:
 
 * **Ventana Temporal:** Seleccionamos **cuatro temporadas consecutivas** para evaluar la constancia en el rendimiento.
-* **Estabilidad de Datos:** Solo se incluyeron **equipos que lograron mantener la categoría** (no descendieron) durante las temporadas analizadas. Esto minimiza la variación estadística ("ruido") introducida por equipos con ciclos de vida cortos en la liga.
+* **Estabilidad de Datos:** Solo incluimos **equipos que lograron mantener la categoría** (no descendieron) durante las temporadas analizadas. Esto minimiza la variación estadística ("ruido") introducida por equipos con ciclos de vida cortos en la liga.
 
 ---
 
 ## 2. Ingeniería y Modelado de Datos (ETL)
 
-El primer paso fue aplicar conceptos de teoría de bases de datos para normalizar la información y asegurar su calidad.
+Nuestro primer paso fue aplicar conceptos de teoría de bases de datos para normalizar la información y asegurar su calidad.
 
 ### Arquitectura Relacional (3FN)
 1.  **Diseño Conceptual:** Definimos un Diagrama Entidad-Relación (DER) para mapear las interrelaciones entre entidades clave (Jugador, Equipo, Partido, Habilidad).
