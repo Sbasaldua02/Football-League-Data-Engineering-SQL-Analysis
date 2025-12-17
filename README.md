@@ -51,6 +51,9 @@ El script `analisis.py` contiene consultas específicas que demuestran el manejo
 Generamos gráficos utilizando **Matplotlib** para responder preguntas como:
 * Relación entre atributos técnicos y goles anotados por equipo.
 * Variación de la característica "potencial" en jugadores top a lo largo del tiempo.
+* Dejo como ejemplo uno de los graficos obtenidos:
+  <img width="957" height="442" alt="image" src="https://github.com/user-attachments/assets/ac3a8c5d-dc6f-4e5b-bd32-7a7a4b06e3b7" />
+
 
 ### Tecnologías Utilizadas
 * **Lenguajes:** Python 3, SQL.
