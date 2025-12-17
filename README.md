@@ -27,6 +27,8 @@ Nuestro primer paso fue aplicar conceptos de teoría de bases de datos para norm
 1.  **Diseño Conceptual:** Definimos un Diagrama Entidad-Relación (DER) para mapear las interrelaciones entre entidades clave (Jugador, Equipo, Partido, Habilidad).
 2.  **Normalización a 3FN:** El modelo relacional que diseñamos fue validado para cumplir con la **Tercera Forma Normal (3FN)**, eliminando dependencias transitivas y asegurando la integridad referencial.
     * *Ver carpeta `docs/` para el diagrama DER y el modelo relacional.*
+      <img width="634" height="463" alt="image" src="https://github.com/user-attachments/assets/e0a70980-516a-43fd-adfe-c4add580df67" />
+
 
 ### Scripts de Transformación (Python/Pandas/SQL)
 * **`generar_tablas.py`:** Script en Python que ejecuta el proceso de Extracción y Transformación (ETL).
